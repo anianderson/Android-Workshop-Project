@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.animeshkumaraashu.finalworkshopproject.QuizPage"
+    android:background="@drawable/abcdef">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:id="@+id/linearLayout9" >
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="36dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quizpagebackbutton"
+                    android:background="@drawable/backbutton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0"
+                android:id="@+id/question1layout"
+                android:layout_below="@+id/linearLayout9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/unnamed"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="QUESTION"
+                    android:id="@+id/textView6"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/quizpagequestiontextview"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/question1layout">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:id="@+id/quizpageradiobutton1"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:id="@+id/quizpageradiobutton2"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:id="@+id/quizpageradiobutton3"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New RadioButton"
+                        android:id="@+id/quizpageradiobutton4"
+                        android:checked="false" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SUBMIT"
+                            android:id="@+id/quizpagesubmitbutton"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
